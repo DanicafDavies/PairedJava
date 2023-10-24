@@ -17,5 +17,13 @@ public class App
         SouthPark.setStreamingTitle("Paramount");
         SouthPark.setRating(21);
         System.out.println(SouthPark.getStreamingTitle() + SouthPark.getRating());
+
+        Series LyfeIsHard = new Series("Netflix", 3, "9 Seasons");
+        System.out.println(String.format("Online near you find LyfeIsHard on the %s streaming platform," +
+                        "rated %d, with %s available to watch",
+                LyfeIsHard.getStreamingTitle(), LyfeIsHard.getRating(), LyfeIsHard.getDuration()));
+
+
+
     }
 }

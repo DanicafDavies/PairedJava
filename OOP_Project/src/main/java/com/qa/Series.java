@@ -21,11 +21,12 @@ public class Series {
             this.streamingTitle = streamingTitle;
         }
 
-       // @Override
+        public Series() { this("Netflix", 13, "15 Seasons"); }
+
         public Series(String StreamingTitle, int rating, String Duration ) {
-            this.setStreamingTitle("Groundhog Day");
-            this.setRating(13);
-            this.setDuration("4 Seasons");
+            this.streamingTitle = StreamingTitle;
+            this.rating = rating;
+            this.duration = Duration;
         }
 
         String streamingTitle;
@@ -34,5 +35,17 @@ public class Series {
         int rating;
         int year;
         int ageRating;
-    }
+
+@Override
+public String toString() {
+    return "Series{" +
+            "streamingTitle='" + streamingTitle + '\'' +
+            ", title='" + title + '\'' +
+            ", duration='" + duration + '\'' +
+            ", rating=" + rating +
+            ", year=" + year +
+            ", ageRating=" + ageRating +
+            '}';
+}
+}
 
